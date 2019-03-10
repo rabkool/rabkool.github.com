@@ -9,13 +9,13 @@
  
 }
 input{
-	text-indent:1em; 
+	text-indent: 0em; 
 	height: 46px;
 	line-height: 46px;
 }
 .sr{
 	position: absolute;
-	left: 400px; /*距离左边*/
+	
 	top:50px;/*顶部*/
 	height: 100px;
 	line-height: 50px;/*100=100垂直居中 文本高度*/
@@ -27,5 +27,22 @@ input{
 	height:28px;
 	line-height: 28px;/*设置中间高度*/
 }
+
+.aaa{position: absolute;
+	left: 100px; /*距离左边*/
+	top:50px;/*顶部*/}
+.bbb{
+	position: absolute;
+	left: 300px; /*距离左边*/
+	top:50px;/*顶部*/}
+.ccc{
+	position: absolute;
+	left: 500px; /*距离左边*/
+	top:50px;/*顶部*/}
+.ddd{position: absolute;
+	left: 700px; /*距离左边*/
+	top:50px;/*顶部*/}
+
+
 
 
