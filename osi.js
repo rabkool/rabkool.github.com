@@ -32,19 +32,16 @@
 
 
         if (convertHour != DifferHour)
-            document.formnow.dd.value = DifferHour
+            document.formnow.dd.value = DifferHour+'日'
         if (convertMinute != DifferMinute)
-            document.formnow.hh.value = DifferMinute
+            document.formnow.hh.value = DifferMinute+'時'
         if (convertSecond != DifferSecond)
-            document.formnow.mm.value = DifferSecond
-        document.formnow.ss.value = dSecs;
-        document.formnow.ss.value = dSecs;
+            document.formnow.mm.value = DifferSecond+'分'
+        document.formnow.ss.value = dSecs+'秒';
+     
         setTimeout("clock()", 1000);
         
     }
 
 
-    function testOpen(){
 
-       window.open("file:///C:/Users/90595_000/Desktop/1235/%E6%98%9F%E4%B9%83%20%E3%81%95%E3%82%86%E3%81%BF_files/tu.html") 
-    }
