@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;/*标准字体*/
+	color:#0FF;
+	font-size:42px;
+	list-style: none;
+	border:none;
+ 
+}
+input{
+	text-indent:1em; 
+	height: 46px;
+	line-height: 46px;
+}
+.sr{
+	position: absolute;
+	left: 400px; /*距离左边*/
+	top:50px;/*顶部*/
+	height: 100px;
+	line-height: 50px;/*100=100垂直居中 文本高度*/
+		
+}
+.sj{
+	float: left;/*横*/
+	margin: 0 0px;/*间距*/
+	height:28px;
+	line-height: 28px;/*设置中间高度*/
+}
+
+
