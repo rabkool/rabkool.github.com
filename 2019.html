@@ -12,7 +12,9 @@
 <script type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
-    data = [
+
+// 可直接替换
+data = [
         ['2019-01-04', 1],
         ['2019-01-05', 0],
         ['2019-01-10', 6],
@@ -112,17 +114,17 @@
         title: {
             top: 30,
             left: 'center',
-            text: '2019星乃さゆみチェキ'
+            text: '2019'
         },
         tooltip: {},
         visualMap: {
             pieces: [ //自定义『分段式视觉映射组件（visualMapPiecewise）』的每一段的范围，以及每一段的文字，以及每一段的特别的样式
-                {min: 1, max: 5},
-                {min: 6, max: 10},
-                {min: 11, max: 15},
-                {min: 16, max: 20},
-                {min: 21, max: 25}
-            ],
+            {min: 1, max: 5, label: '1-5枚'},
+            {min: 6, max: 10,label: '6-10枚'},
+            {min: 11, max: 15,label: '11-15枚'},
+            {min: 16, max: 20,label: '16-20枚'},
+            {min: 21, max: 25,label: '21-25枚'}
+        ],
             type: 'piecewise',
             orient: 'horizontal',
             left: 'center',
@@ -156,13 +158,14 @@
                 nameMap: month
             },
         },
-
+        
         series: {
             type: 'heatmap',
             coordinateSystem: 'calendar',
             data: data
         }
     };
+
 
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
