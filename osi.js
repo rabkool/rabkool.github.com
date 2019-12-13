@@ -2,7 +2,7 @@
     var DifferHour = -1;
     var DifferMinute = -1;
     var DifferSecond = -1;
-    var Dirthday = new Date("6 2,2019 00:00:00");
+    var Dirthday = new Date("6 2,2020 00:00:00");
     var daysms = 24 * 60 * 60 * 1000;
     var hoursms = 60 * 60 * 1000;
     var Secondms = 60 * 1000;
