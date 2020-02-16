@@ -97,6 +97,12 @@ data = [
         ['2019-12-30', 0]
     ];
 
+    var sum = 0;
+
+    for (let i = 0; i < data.length; i++) {
+        sum += Number(data[i][1]);
+    }
+
     day = ["日", "月", "火", "水", "木", "金", "土"]
 
     month = ["1月",
@@ -117,7 +123,7 @@ data = [
         title: {
             top: 30,
             left: 'center',
-            text: '2019星乃さゆみチェキ'
+            text: '2019星乃さゆみチェキ(合計' + sum + ')'
         },
         tooltip: {},
         visualMap: {
